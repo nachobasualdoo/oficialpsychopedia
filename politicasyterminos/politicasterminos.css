@@ -1,0 +1,61 @@
+body {
+    margin: 25px;
+    padding: 0;
+    font-family: 'Times New Roman';
+    font-size:22px ;
+    background-color: whitesmoke;
+    color: rgba(25, 0, 58, 0.8);
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-decoration: bold;
+}
+h2 {
+    text-decoration: bold;
+}
+
+/* Estilos del header */
+header {
+    background-color: rgba(25, 0, 58, 0.8);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #E8B343;
+    width: 100%;
+}
+header a {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header img.logo {
+    width: 450px;
+    transition: transform 0.5s ease;
+}
+
+header img.logo:hover {
+    transform: scale(1.2);
+}
+
+
+footer {
+    background-color: rgba(25, 0, 58, 0.8);
+    color: #E8B343;
+    font-family: 'Times New Roman';
+    padding: 20px;
+    position: relative;
+    border-top: 2px solid #E8B343;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}

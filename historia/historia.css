@@ -1,0 +1,174 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background: url('../recursos/fondoryis.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #E8B343;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgba(25, 0, 58, 0.8);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #E8B343;
+    width: 100%;
+}
+
+header a {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header img.logo {
+    width: 450px;
+    transition: transform 0.5s ease;
+}
+
+header img.logo:hover {
+    transform: scale(1.2);
+}
+
+.titulo img {
+    width: 215px;
+    height: auto;
+}
+
+.logo {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.logo img {
+    width: 160px;
+    height: auto;
+}
+
+.hcontacto {
+    display: flex;
+    gap: 20px;
+}
+
+.hcontacto img {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.hcontacto img:hover {
+    transform: scale(1.2);
+}
+
+main {
+    flex: 1;
+    text-align: center;
+    padding: 30px;
+}
+
+main h1 {
+    color: #E8B343;
+    font-family: 'Bodoni MT';
+    font-size: 5em;
+    margin-bottom: 25px;
+}
+main h2 {
+    color: #E8B343;
+    font-family: 'Bodoni MT';
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+
+main p {
+    color: #C9678E;
+    font-family: 'Bodoni MT';
+    font-size: 1.4em;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+button {
+    background-color: #962F5A;
+    border: none;
+    color: #E8B343;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+    font-family: 'Bodoni MT';
+}
+
+button:hover {
+    background-color: #C9678E;
+    transform: scale(1.2);
+    color: #fff;
+}
+
+button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer {
+    background-color: rgba(25, 0, 58, 0.8);
+    color: #E8B343;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Bodoni MT';
+    padding: 10px 0;
+    border-top: 2px solid #E8B343;
+    width: 100%;
+}
+
+footer a {
+    color: #E8B343;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* Contenedor para las imágenes */
+.imagenes-contenedor {
+    display: flex;
+    justify-content: space-around; /* Alinea las imágenes a la izquierda, centro y derecha */
+    margin: 20px 0; /* Espacio alrededor de la sección de imágenes */
+}
+
+/* Estilo para cada imagen */
+.imagen-item img {
+    width: 220px; /* Ajusta el tamaño de las imágenes */
+    height: 300px;
+    border-radius: 8px;
+    border: 2px solid #E8B343; /* Color del borde */
+}
+
+/* Estilo para los epígrafes */
+.epigrafe {
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+    color: #C9678E; /* Color coherente con el tema */
+}
+.epigrafe2 {
+    text-align: center;
+    margin-top: 10px;
+    color: #E8B343; /* Color coherente con el tema */
+
+}

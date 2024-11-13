@@ -1,0 +1,88 @@
+body {
+    background: url('../recursos/fondoryis.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Bodoni MT;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.message-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 20px 25px rgba(0, 0, 0, 0.1);
+    background: #1b003a; /* Fondo del formulario */
+    border: 2px solid #C9678E; /* bordes */
+    display: flex;
+    flex-direction: column; /* Para alinear elementos en columna */
+    align-items: center; /* Centrar todos los hijos horizontalmente */
+}
+
+.message-box h1 {
+    font-size: 45px;
+    color: #E8B343;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.message-box p {
+    font-size: 20px;
+    color: #C9678E;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.message-box img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+.message-box .btndonacion {
+    width: 100%;
+    max-width: 200px; /* Puedes ajustar el ancho del botón según prefieras */
+    background: #E8B343;
+    border: 5px solid #C9678E;
+    padding: 12px;
+    color: blue;
+    margin: 15px 0;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px; /* Cambia el borde a más redondeado */
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center; /* Asegura que el texto esté centrado */
+    text-decoration: none;
+}
+
+.message-box .btndonacion:hover {
+    background-color: #C9678E;
+    transform: scale(1.07);
+}
+.message-box .btn {
+    width: 100%;
+    max-width: 200px; /* Puedes ajustar el ancho del botón según prefieras */
+    background: #E8B343;
+    border: 5px solid #C9678E;
+    padding: 12px;
+    color: blue;
+    margin: 15px 0;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px; /* Cambia el borde a más redondeado */
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center; /* Asegura que el texto esté centrado */
+    text-decoration: none;
+}
+
+.message-box .btn:hover {
+    background-color: #C9678E;
+    transform: scale(1.07);
+}
+.message-box a {
+    .message-box .btn:hover 
+}

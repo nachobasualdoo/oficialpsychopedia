@@ -1,0 +1,367 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bodoni MT';
+}
+
+/* Body full height to ensure footer is at the bottom */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Bodoni MT';
+    background-color: #1C1B29;
+    color: #E8B343;
+    background: url('../recursos/fondoryis.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Main container with flex-grow to push footer down */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header styling */
+header {
+    background-color: rgba(25, 0, 58, 0.8);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid gold;
+}
+
+.titulo img {
+    width: 240px;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+.titulo img:hover {
+    transform: scale(1.2);
+}
+
+.secciones a {
+    color: #E8B343;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: 'Bodoni MT';
+    font-size: 1.2em;
+}
+
+.secciones a:hover {
+    color: #C9678E;
+}
+
+.banner {
+    color: whitesmoke;
+    padding: 10px;
+    font-size: 1.5em;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+    animation: move 2s ease-in-out infinite alternate, glow 1.5s infinite alternate;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 15px gold;
+    }
+    100% {
+        text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700;
+    }
+}
+
+/* Footer styling */
+footer {
+    background-color: rgba(25, 0, 58, 0.8);
+    color: #E8B343;
+    font-family: 'Bodoni MT';
+    padding: 20px;
+    border-top: 2px solid #E8B343;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-nav a {
+    color: #E8B343;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #C9678E;
+    font-size: 4.5em;
+}
+
+h3 {
+    margin: 15px 0;
+    color: #C9678E;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+/* Product grid styling */
+.productos-grid {
+    display: fixed;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 40px;
+    width: 100%;
+    position: relative;
+    animation: moveProducts 16s linear infinite;
+}
+
+/* Reduce size of product containers */
+.producto-item {
+    background-color: rgba(25, 0, 58, 0.8);
+    border: 4px solid #E8B343;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    display: inline-block;
+    margin: 15px;
+    transition: transform 0.5s ease;
+    width: 270px;
+    height: auto;
+    position: relative;
+}
+
+/* Adjust text overflow for product descriptions */
+.producto-item p {
+    margin-top: 10px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.producto-item h3 {
+    margin-top: 10px;
+    font-size: 22px;
+    text-align: center;
+}
+
+/* Hover effect for product items */
+.producto-item:hover {
+    transform: scale(1.05);
+    animation-play-state: paused;
+    background-color: #e8b34b;
+    border-color: #996515;
+    color: black;
+}
+.producto-item:hover h3 {
+    color: rgba(25, 0, 58, 0.8);
+    font-size: 20px;
+}
+.producto-item:hover img {
+    border: 3px solid black;
+
+}
+
+.producto-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 4px solid #e8b34b;
+}
+.producto-item:hover .add-to-cart {
+    background-color: rgba(25, 0, 58, 0.8);
+    color: #E8B343;
+    transform: scale(1.05);
+}
+
+/* Center the "No hay productos disponibles" text in the middle of the page */
+.no-products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Button for viewing cart with larger size and color */
+.carrito-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #C9678E;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1.1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.carrito-btn:hover {
+    background-color: #FF92B6;
+    transform: scale(1.05);
+}
+
+/* Cart container styling */
+.carrito-container {
+    position: fixed;
+    top: 50px;
+    right: 10px;
+    background-color: rgba(25, 0, 58, 0.8);
+    border: 2px solid #C9678E;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carrito-container h2{
+    font-size: 22px;
+    text-align: center;
+}
+
+/* Select elements with additional spacing */
+.select-talla, .input-cantidad {
+    margin: 10px 0;
+    padding: 8px;
+    border-radius: 2px;
+    border: 1px solid #ddd;
+    width: 50%;
+    font-size: 1em;
+}
+
+.add-to-cart {
+    background-color: #E8B343;
+    color: #1C1B29;
+    padding: 12px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    margin-top: 15px;
+}
+.add-to-cart:hover {
+    background-color: #FFDF80;
+    transform: scale(1.05);
+}
+.add-to-cart:active {
+    transform: scale(0.95);
+    transition: transform 0.05s ease;
+}
+.barra-separadora {
+    border: none;   
+    border-top: 4px solid #E8B343;
+    margin: 30px 0;
+    text-align: center;
+    width: 100%;
+}
+.remove-from-cart {
+    background-color: #8B0000; /* Rojo oscuro */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+.remove-from-cart:hover {
+    background-color: #B22222; /* Rojo ligeramente más claro */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Incrementa la sombra */
+}
+
+.remove-from-cart:active {
+    background-color: #7F0000; /* Rojaún más oscuro para el efecto de presionado */
+    transform: scale(0.98); /* Reduce ligeramente el tamaño */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Reduce la sombra */
+}
+.containerinfo {
+    position: relative;
+    height: 4vh; /* Ajusta según sea necesario */
+}
+
+.info-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #E8B343;
+    color: white;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+
+.info-button .tooltip {
+    visibility: hidden;
+    background-color: rgba(25, 0, 58, 0.8);
+    color: #E8B343;
+    border: 1px solid #E8B343;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    bottom: 130%; /* Coloca el tooltip arriba del botón */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    white-space: nowrap;
+    font-size: 16px;
+}
+
+.info-button:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}

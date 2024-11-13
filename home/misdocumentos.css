@@ -1,0 +1,305 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY PAGINA BODY PAGINA BODY PAGINA BODY PAGINA BODY PAGINA BODY PAGINA BODY PAGINA BODY PAGINA */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bodoni MT', serif;
+    background: url('../recursos/fondoryis.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #E8B343;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main {
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto 60px auto; /* Añade margen inferior para el espacio del footer */
+    text-align: center;
+}
+
+/* SECCION ENCABEZADO SECCION ENCABEZADO SECCION ENCABEZADO SECCION ENCABEZADO SECCION ENCABEZADO */
+
+header {
+    background-color: rgba(25, 0, 58, 0.8);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #E8B343;
+    width: 100%;
+}
+
+header a {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header img.logo {
+    width: 450px;
+    transition: transform 0.5s ease;
+}
+
+header img.logo:hover {
+    transform: scale(1.2);
+}
+h1
+{
+    animation: pulse 2s infinite; /* Adjust duration as needed */
+    font-size: 65px;
+    font-family: 'Bodoni MT';
+}
+.documentos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;  
+    justify-content: center;
+    margin-top: 20px; 
+    min-height: 350px; 
+    position: relative; 
+}
+
+.documento-item {
+    background-color: rgba(25, 0, 58, 0.8);
+    border: 4px solid #E8B343;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    color: #E8B343;
+    transition: transform 0.3s ease;
+}
+
+.documento-item:hover {
+    transform: scale(1.05);
+    background-color: #340856;
+    cursor: pointer;
+}
+
+
+.documento-item img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #e8b34b;
+    border-radius: 8px;
+}
+
+.documento-item a {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #C9678E;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.documento-item a:hover {
+    background-color: #E8B343;
+}
+
+.documento-item.restringido {
+    background-color: #e8b34b;
+    border-color: #996515;
+    color: black; 
+
+}
+.documento-item.restringido:hover .estrella-premium {
+    color: #e8b34b; 
+
+}
+
+.documento-item.restringido:hover {
+    background-color: #996515;
+    color: #e8b34b;
+    border-color: #e8b34b;
+    color: #e8b34b;
+    cursor: pointer; 
+
+}
+.documento-item.restringido:hover a {
+    background-color: #e8b34b;
+
+}
+
+.documento-item.restringido img {
+    border: 3px solid #996515; 
+}
+.documento-item.restringido:hover img {
+    border: 3px solid #e8b34b; 
+}
+.documento-item.restringido a {
+    background-color: #996515; 
+}
+.documento-item.restringido a:hover {
+    background-color: #e8b34b;
+    transition: 0.5s ease; 
+}
+
+.estrella-premium {
+    color: #996515;
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+.btn-eliminar
+{
+    width: 50px; /* Ancho del botón */
+    height: 50px; /* Alto del botón */
+    border-radius: 50%; /* Hace el botón circular */
+    font-size: 15px; /* Tamaño de fuente */
+    display: fixed; /* Para usar flexbox dentro del botón */
+    justify-content: center; /* Centra el contenido del botón */
+    align-items: center; /* Alinea el contenido verticalmente */
+    color: white; /* Color del texto */
+    border: 1px solid; /* Bordes por defecto */
+    font-family: Bodoni MT;
+    background-color: rgba(25, 0, 58, 0.8); 
+    border-color: #C9678E;
+    padding: 15px;
+    margin: 10px;
+}
+.btn-eliminar:hover 
+{
+    color: red; /* Color del texto al pasar el mouse */
+    cursor: pointer;
+}
+}
+.estrella-premium {
+    color: #996515;
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+
+footer {
+    background-color: rgba(25, 0, 58, 0.8);
+    color: #E8B343;
+    font-family: 'Bodoni MT', serif;
+    padding: 20px;
+    position: fixed;
+    border-top: 2px solid #E8B343;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+footer p{
+    margin-top: -10px;;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente oscuro */
+}
+
+.modal-content {
+    background-color: #fff; /* Fondo blanco */
+    margin: 5% auto;
+    padding: 20px;
+    border: 4px solid #ddd; /* Borde grueso gris claro */
+    width: 100%;
+    max-width: 600px;
+    color: #333; /* Texto gris oscuro */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    font-family: 'Bodoni MT', sans-serif; /* Fuente elegante */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar contenido */
+}
+
+.modal-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#modal-title {
+    font-size: 1.8em;
+    margin: 0;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1; /* Permitir que el título ocupe el espacio disponible */
+}
+
+.modal .close-button {
+    background-color: #555; /* Botón de cierre en gris oscuro */
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal .close-button:hover {
+    background-color: #777; /* Efecto hover en gris más claro */
+}
+
+#modal-description {
+    margin-top: 20px;
+    text-align: center; /* Centrar descripción */
+    color: #666; /* Texto gris medio */
+}
+
+.button-group {
+    display: flex;
+    justify-content: center; /* Centrar los botones */
+    margin-top: 20px;
+    gap: 10px; /* Espacio entre botones */
+}
+
+.btn-descargarMODAL {
+    background-color: #333; /* Color de fondo */
+    color: #FFF;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: 2px solid #333; /* Borde grueso */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.btn-descargarMODAL:hover {
+    background-color: #666; /* Color de fondo al pasar el mouse */
+}
+.btn-guardar{
+    width: 50px; /* Ancho del botón */
+    height: 50px; /* Alto del botón */
+    background-color: darkblue; /* Color gris */
+    border-radius: 50%; /* Hace el botón circular */
+    border: 1px blue solid;
+    font-size: 25px;
+    display: fixed;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.btn-guardar:hover{
+    color: #E8B343;
+    cursor: pointer;
+}
+.p-nopremium {
+    text-align: center;
+    color: darkgray;
+}

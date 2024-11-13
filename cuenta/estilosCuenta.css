@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
+body {
+    font-family: 'Bodoni MT';
+    font-size: 20px;
+    background: url('../recursos/fondoryis.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #E8B343;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: rgba(25, 0, 58, 0.8);
+    padding: 15px;
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    border-bottom: 2px solid #E8B343;
+    width: 100%;
+}
+
+header a {
+    text-align: center; /* Mantiene el texto centrado dentro del <a> */
+    margin-bottom: 10px;
+}
+
+header img.logo {
+    width: 450px; /* Aumentar tamaño de la imagen */
+    transition: transform 0.5s ease; /* Animación de agrandado */
+}
+
+header img.logo:hover {
+    transform: scale(1.2); /* Aumenta más la imagen al pasar el cursor */
+}
+
+
+h1 {
+    font-size: ;    
+    color: #C9678E;
+    padding-bottom: 10px;
+    font-size: 90px;
+}
+
+p {
+    font-size: 4em;    
+    color: #E8B343;
+    padding-bottom: 10px;
+    font-family: 'Bodoni Mt';
+    font-size: 25px;
+    text-align: center;
+
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Añadir espacio entre los formularios */
+    align-items: center;
+}
+
+form {
+    background-color: rgba(25, 0, 58, 0.9);
+    padding: 20px;
+    border: 2px solid #E8B343;
+    border-radius: 10px;
+    width: 450px; /* Aumentar el ancho del formulario */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    color: #C9678E;
+    text-align: center;
+    font-family: 'Bodoni Mt';
+    font-size: 25px;
+}
+
+form h2 {
+    text-align: center;
+    font-size: 50px;
+}
+
+form input, form select {
+    padding: 10px;
+    border: 2px solid #E8B343;
+    border-radius: 5px;
+    background-color: #19003A;
+    color: #E8B343;
+    font-size: 15px;
+}
+
+form button {
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    border: 1px solid #E8B343;
+}
+.fotoPerfil {
+    text-align: center; /* Centrar el contenido dentro del formulario */
+}
+.fotoPerfil .fotoPerfilImg {
+    text-align: center;
+    width: 250px; /* Tamaño adecuado para la imagen */
+    height: auto; /* Mantener la proporción de la imagen */
+    /*border-radius: 5%; /* Opcional: para hacer la imagen circular */
+    margin-bottom: 10px; /* Espacio debajo de la imagen */
+    border: 1px solid #E8B343;
+    display: block; /* Asegurar que el input ocupe el ancho completo */
+    margin: 10px auto; /* Centrar el input de archivo */
+}
+
+
+
+.botonescss {
+    background-color: #E8B343;
+    color: #1C1B29;
+    padding: 12px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    margin-top: 15px;
+}
+.botonescss:hover {
+    background-color: #FFDF80;
+    transform: scale(1.05);
+}
+.botonescss:active {
+    transform: scale(0.95);
+    transition: transform 0.05s ease;
+}
+
+
+.fotoPerfil button {
+    background-color: darkgreen; /* Verde */
+    color: white;
+}
+.fotoPerfil button:hover{
+    background-color: darkgreen;
+    transform: scale(1.05);
+}
+.guardarCambios button {
+    background-color: darkgreen; /* Verde */
+    color: white;
+}
+.guardarCambios button:hover{
+    background-color: darkgreen;
+    transform: scale(1.05);
+}
+.cerrarSesion button {
+    background-color: darkviolet ; 
+    color: white;
+}
+.cerrarSesion button:hover{
+    background-color: purple;
+    transform: scale(1.05);
+}
+.eliminarCuenta button {
+    background-color: red; 
+    color: white;
+}
+.eliminarCuenta button:hover{
+    background-color: darkred;
+    transform: scale(1.05);
+}
+
+
+
+footer {
+    background-color: rgba(25, 0, 58, 0.8);
+    color: #E8B343;
+    font-family: 'Bodoni MT';
+    padding: 20px;
+    position: relative;
+    border-top: 2px solid #E8B343;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-nav a {
+    color: #E8B343;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}

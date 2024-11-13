@@ -1,0 +1,120 @@
+main {
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+    background: #1b003a;
+    border: 3px solid #C9678E; /* Borde dorado */
+    border-radius: 12px; /* Bordes más redondeados */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+header {
+    background-color: rgba(25, 0, 58, 0.8);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #E8B343;
+    width: 100%;
+}
+
+header a {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header img.logo {
+    width: 450px;
+    transition: transform 0.5s ease;
+}
+
+header img.logo:hover {
+    transform: scale(1.2);
+}
+
+h1 {
+    text-align: center;
+    color: #e8b343;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px; /* Estrecha el formulario */
+    margin: 0 auto 60px auto; /* Agrega un pequeño margen con la parte inferior */
+    padding: 20px; /* Espacio interno del formulario */
+    border: 3px solid #e8b343; /* Borde dorado */
+    border-radius: 12px; /* Bordes más redondeados */
+    background-color: #1b003a; /* Fondo del formulario */
+}
+
+label {
+    font-weight: bold;
+    color: #e8b343;
+}
+
+input[type="text"],
+select,
+input[type="file"] {
+    padding: 10px;
+    color: #E8B343; /* color del label dentro del input sin tocar */
+    font-size: 16px;
+    border: 1px solid #E8B343;
+    border-radius: 5px;
+    background-color: #79305a;
+}
+
+input[type="text"]:focus,
+select:focus,
+input[type="file"]:focus {
+    color: #E8B343;
+    border-color: #C9678E;
+    outline: none;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #962F5A;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #79305a;
+    transform: scale(1.07);
+}
+
+.mensaje {
+    text-align: center;
+    color: #C9678E;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.eliminar {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #962F5A;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.eliminar:hover {
+    background-color: #C9678E;
+}
+
+
+/* COLORES
+VIOLETA OSCURO: #962F5A
+DORADO: #E8B343
+VIOLETA CLARO: #C9678E
+ROSA OSCURO (HOVER INPUTS): #79305a
+VIOLETA MUY OSCURO (FONDO FORM): #1b003a

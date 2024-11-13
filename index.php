@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychopedia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilosINDEX.css">
+</head>
+<body>
+    <header>
+        <div class="titulo">
+            <img src="recursos/titulo.png" alt="titulo">
+        </div>
+        <div class="logo">
+            <img src="recursos/logo.png" alt="Logo">
+        </div>
+        <div class="hcontacto">
+            <a href="https://mail.google.com"><img src="recursos/contacto.png" alt="Gmail"></a>
+            <a href="https://twitter.com"><img src="recursos/x.jpg" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="recursos/instagram.png" alt="Instagram"></a>
+        </div>
+    </header>
+    <main>
+        <h1>¡Bienvenido a Psychopedia!</h1>
+        <p>Somos Psychopedia, y nuestra misión es proporcionarte los documentos que necesitas para lograr ese bienestar y salud mental que no sabes dónde encontrar. <br> Dentro de aquí, podrás encontrar guías, artículos y estudios recopilados meticulosamente para ayudarte a mejorar tu calidad de vida, manejar el estrés y promover una mente sana y equilibrada. Ya sea que estés buscando consejos prácticos o información más detallada, estamos aquí para apoyarte en tu camino hacia un bienestar integral.</p>
+        <div class="buttons">
+            <button class="register"><a href="registro/registro.php">Registrarse</a></button>
+            <button class="login"><a href="iniciosesion/iniciosesion.php">Iniciar Sesión</a></button>
+        </div>
+    </main>
+
+    <footer>
+        <a href="terminos/tycondiciones.html">Términos y Condiciones</a>
+        <a href="terminos/pprivacidad.html">Políticas de Privacidad</a>
+        <a href="desarrolladores/inidesarrolladores.php">Desarrolladores</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,136 @@
+/* Reset básico para quitar márgenes y paddings por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('../recursos/fondoryis.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Bodoni MT;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Estilo del contenedor principal */
+.content-wrapper {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10 20 25px rgba(0, 0, 0, 0.1);
+    background: #1b003a; /* Fondo del formulario */
+    border: 2px solid #C9678E; /* bordes */
+}
+
+.header img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+.header img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.formulario-cambiar {
+    text-align: center;
+}
+
+.formulario-img {
+    width: 150px; /* Ajusta el valor del ancho según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Alinea la imagen en bloque para un centrado más fácil */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+
+b {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    display: block;
+    color: #E8B343;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    color: #C9678E;
+}
+
+.labels {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.botones {
+    width: 100%;
+    background: #962F5A;
+    border: none;
+    padding: 12px;
+    color: #E8B343;
+    margin: 15px 0;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px; /* Cambia el borde a más redondeado */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.botones:hover {
+    background-color: #C9678E;
+    transform: scale(1.07);
+}
+
+
+/* Footer styles */
+footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+footer img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo para el mensaje de error */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Responsive design para pantallas pequeñas */
+@media (max-width: 600px) {
+    .content-wrapper {
+        padding: 15px;
+    }
+
+    .header img {
+        max-width: 100%;
+    }
+
+    .formulario-img {
+        width: 60px;
+    }
+
+    .botones {
+        font-size: 14px;
+    }
+}

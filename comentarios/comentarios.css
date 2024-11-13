@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bodoni MT';
+    background: url('../recursos/fondoryis.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #E8B343;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+}
+
+header {
+    background-color: rgba(25, 0, 58, 0.8);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #E8B343;
+    width: 100%;
+}
+
+header img.logo {
+    width: 450px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+header img.logo:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    background-color: rgba(25, 0, 58, 0.8);
+    color: #E8B343;
+    font-family: 'Bodoni MT';
+    padding: 20px;
+    position: fixed;
+    border-top: 2px solid #E8B343;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+footer p {
+    margin-top: -10px;
+}
+
+
+/* Estilo para el formulario de comentarios */
+input[type="text"], textarea {
+    width: 100%;
+    max-width: 600px; /* Ajusta el tamaño máximo del input y textarea */
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #E8B343;
+    border-radius: 8px;
+    background-color: rgba(25, 0, 58, 0.6); /* Fondo semitransparente */
+    color: #E8B343; /* Color del texto */
+    font-family: 'Bodoni MT';
+    font-size: 16px;
+}
+
+input[type="text"]::placeholder, textarea::placeholder {
+    color: #E8B343; /* Color del texto de los placeholders */
+}
+
+textarea {
+    height: 150px; /* Altura específica para el textarea */
+    resize: vertical; /* Permite al usuario cambiar el tamaño verticalmente */
+}
+
+/* Estilo para el botón de enviar */
+input[type="submit"] {
+    padding: 12px 24px;
+    border: none;
+    background-color: #C9678E; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    font-size: 16px;
+    font-family: 'Bodoni MT';
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #E8B343; /* Cambia el color al pasar el ratón */
+    color: #1D003A; /* Color del texto cuando se hace hover */
+}
+
+/* Estilo para la tabla de comentarios */
+table {
+    width: 100%;
+    max-width: 800px; /* Ajusta el tamaño máximo de la tabla */
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: rgba(25, 0, 58, 0.8);
+    border: 2px solid #E8B343;
+    font-family: 'Bodoni MT';
+    color: #E8B343;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #E8B343;
+}
+
+table th {
+    background-color: #C9678E;
+    font-size: 18px;
+}
+
+table td {
+    background-color: rgba(25, 0, 58, 0.7); /* Fondo semitransparente */
+    font-size: 16px;
+}
+
+table tr:hover {
+    background-color: rgba(25, 0, 58, 0.9); /* Cambia el fondo al pasar el ratón por una fila */
+}
+
+

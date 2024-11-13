@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY PAGINA */
+body {
+    background: url('../recursos/fondoryis.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Bodoni MT;
+    min-height: 100vh; /* Asegura que el body cubra toda la altura de la pantalla */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+header {
+    background-color: rgba(25, 0, 58, 0.8);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #E8B343;
+    width: 100%; /* Asegura que el header ocupe el 100% del ancho */
+    box-sizing: border-box; /* Asegura que el padding no afecte al ancho total */
+    left: 0; /* Asegura que el header esté alineado con el borde izquierdo */
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+}
+
+
+header a {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header img.logo {
+    width: 450px;
+    transition: transform 0.5s ease;
+}
+
+header img.logo:hover {
+    transform: scale(1.2);
+}
+
+/* FORMULARIO */
+.formulario-registro {
+    width: 420px;
+    height: auto;
+    background: #1b003a;
+    border: 1px solid #C9678E;
+    padding: 30px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 22px 53px 77px #10002b;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.formulario-registro .formulario-img {
+    display: block;
+    margin: 0 auto 10px auto; 
+    width: 200px;
+    height: auto;
+}
+
+/* SECCION LABELS/INPUTS */
+.registrolabels {
+    width: 100%;    
+    background: #572649;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #E8B343;  
+    font-family: 'Bodoni MT';
+    font-size: 18px;
+    color: #E8B343;
+}
+
+.formulario-registro .registrolabels:hover {
+    background-color: #79305a;
+    transform: scale(1.04);
+}
+
+.formulario-registro p {
+    height: 45px;
+    text-align: center;
+    font-size: 15px;
+    color: #E8B343;
+    line-height: 20px;
+}
+
+.formulario-registro b {
+    height: 5px;
+    text-align: center;
+    margin-left: 60px;
+    font-size: 28px;
+    color: #E8B343;
+    line-height: 60px;
+}
+
+.formulario-registro a {
+    color: #C9678E;
+    text-decoration: none;
+}
+
+.formulario-registro h1 {
+    height: 50px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 20px;
+    color: #962F5A;
+}
+
+.formulario-registro a:hover {
+    color: #C9678E;
+    text-decoration: underline;
+}
+
+/* SECCION BOTONES */
+.formulario-registro .botones {
+    width: 100%;
+    background: #962F5A;
+    border: none;
+    padding: 12px;
+    color: #E8B343;
+    margin: 27px 0;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px; 
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.formulario-registro .botones:hover {
+    background-color: #C9678E;
+    transform: scale(1.07);
+}
+
+/* FOOTER */
+footer {
+    background-color: #10002b;
+    border-top: 3px solid #E8B343; 
+    color: #E8B343;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+footer img {
+    width: 55px; 
+    height: auto; 
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+}
+
+footer img:hover {
+    transform: scale(1.2);
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Correcciones para el contenido */
+.error {
+    background-color: #500043;
+    color: black;
+    padding: 12px;
+    width: 95%;
+    border-radius: 13px;
+    margin: 15px auto;
+}

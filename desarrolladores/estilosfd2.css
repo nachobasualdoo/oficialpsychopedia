@@ -1,0 +1,168 @@
+main {
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+    background: #1b003a;
+    border: 3px solid #C9678E; /* Borde dorado */
+    border-radius: 12px; /* Bordes más redondeados */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.header img {
+    width: 80%; /* Ajusta el tamaño de la imagen como un porcentaje del ancho del contenedor */
+    max-width: 500px; /* Ajusta el ancho máximo de la imagen según lo necesites */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina cualquier espacio en línea adicional que pueda causar desalineación */
+    margin: 0 auto; /* Centra la imagen dentro del contenedor */
+}
+h1 {
+    text-align: center;
+    color: #e8b343;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px; /* Estrecha el formulario */
+    margin: 0 auto 60px auto; /* Agrega un pequeño margen con la parte inferior */
+    padding: 20px; /* Espacio interno del formulario */
+    border-radius: 12px; /* Bordes más redondeados */
+    background-color: #1b003a; /* Fondo del formulario */
+}
+/* CSS */
+
+.formulario-botones {
+    display: flex;
+    justify-content: space-between; /* Coloca los botones en extremos opuestos */
+    gap: 10px; /* Reduce la separación entre los botones */
+    margin-top: 15px; /* Ajusta el margen superior para reducir la distancia con otros elementos */
+}
+
+.formulario-botones button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-guardar {
+    background-color: #28a745; /* Verde */
+    color: white;
+}
+
+.boton-eliminar {
+    background-color: #dc3545; /* Rojo */
+    color: white;
+}
+
+.boton-guardar:hover {
+    background-color: #218838; /* Verde más oscuro al pasar el mouse */
+}
+
+.boton-eliminar:hover {
+    background-color: #c82333; /* Rojo más oscuro al pasar el mouse */
+}
+
+
+label {
+    font-weight: bold;
+    color: #e8b343;
+}
+
+input[type="text"],
+select,
+input[type="file"] {
+    padding: 10px;
+    color: #E8B343; /* color del label dentro del input sin tocar */
+    font-size: 16px;
+    border: 1px solid #E8B343;
+    border-radius: 5px;
+    background-color: #79305a;
+}
+
+input[type="text"]:focus,
+select:focus,
+input[type="file"]:focus {
+    color: #E8B343;
+    border-color: #C9678E;
+    outline: none;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #962F5A;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #79305a;
+    transform: scale(1.07);
+}
+
+.mensaje {
+    text-align: center;
+    color: #C9678E;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.documentos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.documento-item {
+    background-color: #1b003a;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.documento-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.editar-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.eliminar {
+    display: block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #962F5A;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.eliminar:hover {
+    background-color: #C9678E;
+}
+
+
+
+/* COLORES
+VIOLETA OSCURO: #962F5A
+DORADO: #E8B343
+VIOLETA CLARO: #C9678E
+ROSA OSCURO (HOVER INPUTS): #79305a
+VIOLETA MUY OSCURO (FONDO FORM): #1b003a
