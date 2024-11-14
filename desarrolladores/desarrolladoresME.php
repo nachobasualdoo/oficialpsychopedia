@@ -126,7 +126,7 @@ $resultado = $cnx->query($sql);
 </head>
 <body>
     <header>
-        <a href="../index.php">
+        <a href="../index.html">
             <img src="../recursos/titulo.png" alt="Título" class="logo">
         </a>
     </header>

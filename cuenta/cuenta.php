@@ -3,7 +3,7 @@ session_start();
 
 // Verificar si el usuario ha iniciado sesión
 if (!isset($_SESSION['usuario'])) {
-    header("Location: ../index.php");
+    header("Location: ../index.html");
     exit();
 }
 
@@ -107,7 +107,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['eliminar_cuenta'])) {
         $stmt->close();
 
         session_destroy();
-        header("Location: ../index.php?mensaje=Cuenta eliminada exitosamente.");
+        header("Location: ../index.html?mensaje=Cuenta eliminada exitosamente.");
         exit();
     }
 }

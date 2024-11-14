@@ -24,7 +24,7 @@ if (isset($_GET['token']) && isset($_GET['usuario'])) {
 
         // Destruir la sesión y redirigir
         session_destroy();
-        header("Location: ../index.php?mensaje=Cuenta eliminada exitosamente.");
+        header("Location: ../index.html?mensaje=Cuenta eliminada exitosamente.");
         exit();
     } else {
         echo "Token inválido o ya usado.";

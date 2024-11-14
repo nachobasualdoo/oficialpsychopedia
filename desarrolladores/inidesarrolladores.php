@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../iniciosesion/estilosINI.css">
 </head>
 <header>
-    <a href="../index.php">
+    <a href="../index.html">
         <img src="../recursos/titulo.png" alt="Título" class="logo">
     </a>
 </header>

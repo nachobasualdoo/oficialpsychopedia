@@ -26,7 +26,6 @@ $cnx->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psychopedia Plus+</title>
     <link rel="stylesheet" href="estilosplus.css">
-    <script src="https://js.stripe.com/v3/"></script>
 </head>
 <body>
     <header>

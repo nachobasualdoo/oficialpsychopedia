@@ -9,7 +9,7 @@
 <body>
     <div class="content-wrapper">
         <header class="header">
-            <a href="../index.php">
+            <a href="../index.html">
                 <img src="../recursos/titulo.png">
             </a>
         </header>

@@ -1,7 +1,7 @@
 <<?php  
 session_start();
 if (!isset($_SESSION['ndesarrollador'])) {
-    header("Location: ../index.php");
+    header("Location: ../index.html");
     exit();
 }
 ?>
@@ -41,7 +41,7 @@ if (!isset($_SESSION['ndesarrollador'])) {
         <a href="../terminos/tycondiciones.html">Términos y Condiciones</a>
         <a href="../terminos/pprivacidad.html">Políticas de Privacidad</a>
         <a href="../iniciosesion/iniciosesion.php">Psychopedia Plus+</a>
-        <a href="../index.php">Index</a>
+        <a href="../index.html">Index</a>
     </footer>
 </body>
 </html>
