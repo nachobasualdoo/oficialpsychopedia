@@ -49,9 +49,9 @@ $cnx->close();
                 </div>
                 <div class="plan-contenedor">
                     <div class="plan">
-                        <h2>Plan Basic</h2>
+                        <h2>Plan Basic.</h2>
                         <p>Acceso a documentos de categoría PREMIUM.</p>
-                        <p><strong>Precio:</strong> $999ARS/mes</p>
+                        <p><strong>Precio:</strong> $499.99ARS/mes</p>
                         <ul>
                             <li>Documentos PREMIUM</li>
                             <li>Actualizaciones mensuales</li>
