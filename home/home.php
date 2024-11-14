@@ -153,14 +153,11 @@ $stmtGuardados->close();
         <div class="nuestras-redes">
             <button class="redes-btn">Nuestras Redes</button><br>
             <div class="redes-menu">
-                <a href="https://x.com" target="_blank">
+                <a href="https://x.com/PsychopediaNLJ" target="_blank">
                     <img src="../recursos/x.jpg" alt="Twitter">
                 </a>
-                <a href="https://instagram.com" target="_blank">
+                <a href="https://www.instagram.com/psychopediaproject/" target="_blank">
                     <img src="../recursos/instagram.png" alt="Instagram">
-                </a>
-                <a href="https://mail.google.com" target="_blank">
-                    <img src="../recursos/contacto.png" alt="Mail">
                 </a>
             </div>
         </div>

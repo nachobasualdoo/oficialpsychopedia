@@ -43,18 +43,13 @@
 
         <footer>
             <div class="footer-left">
-                <a href="https://www.instagram.com" target="_blank">
+                <a href="https://www.instagram.com/psychopediaproject/" target="_blank">
                     <img src="../recursos/instagram.png" alt="Instagram">
                 </a>
             </div>
             <div class="footer-center">
-                <a href="https://www.twitter.com" target="_blank">
+                <a href="https://x.com/PsychopediaNLJ" target="_blank">
                     <img src="../recursos/x.jpg" alt="Twitter">
-                </a>
-            </div>
-            <div class="footer-right">
-                <a href="mailto:psychopediaproject@gmail.com" target="_blank">
-                    <img src="../recursos/contacto.png" alt="contacto">
                 </a>
             </div>
         </footer>
